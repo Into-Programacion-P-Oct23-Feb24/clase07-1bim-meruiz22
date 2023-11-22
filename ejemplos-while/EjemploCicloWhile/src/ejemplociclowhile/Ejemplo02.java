@@ -16,16 +16,18 @@ public class Ejemplo02 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner entrada = new Scanner(System.in);
+        Scanner entrada = new Scanner(System.in); 
         entrada.useLocale(Locale.US);
         int limite;
         int contador = 1;
         System.out.println("Ingrese el límite");
         limite = entrada.nextInt();
         while (contador <= limite){
-            System.out.printf("Contador %d\n", contador);
-            contador = contador + 1;
+            if (contador%2!=0){
+                System.out.printf("Contador %d\n", contador);
+            
         }
-        
+        contador = contador + 1;
     }
+}
 }
